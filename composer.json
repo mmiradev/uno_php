@@ -1,0 +1,19 @@
+{
+  "name": "vendor_name/uno_php",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "maria",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
+}
