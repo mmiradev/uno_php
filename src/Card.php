@@ -71,4 +71,8 @@ class Card
                 return this->getSymbol();
         }
     }
+
+    public function __toString(): string{
+        return $this->getColor(). " ". $this->getSymbol();
+    }
 }
