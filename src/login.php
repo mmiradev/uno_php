@@ -31,7 +31,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>uNO - Login</title>
+    <title>UNO - Login</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
@@ -60,7 +60,7 @@
     </div>
     <?php
     if (!empty($error)) {
-        echo "<h2>" . $error . "</h2>";
+        echo '<h2 class="alert alert-warning d-flex align-items-center" role="alert">' . $error . "</h2>";
     }
     ?>
     <form method="post">
