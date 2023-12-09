@@ -11,6 +11,7 @@ class DrawPile extends Pile
     }
 
     private function initializeDrawPile() {
+        //called all consts variable to fill the pile
         $colors = [Card::RED, Card::BLUE, Card::GREEN, Card::YELLOW];
         $specialSymbols = [Card::SKIP, Card::REVERSE, Card::PICKER];
         $symbols = range(0, 9);
