@@ -1,7 +1,7 @@
 <?php
 
 
-class Card
+class Card implements \Countable
 {
     //const
     const BLUE = 0;
@@ -19,6 +19,7 @@ class Card
     //atributes
     private int $color;
     private int $symbol;
+    private static int $totalCards = 0;
 
     //Constructor
     public function __construct(int $color, int $symbol)
@@ -34,6 +35,7 @@ class Card
         }
         $this->color = $color;
         $this->symbol = $symbol;
+        self::$totalCards++;
     }
 
     //getters
@@ -74,5 +76,10 @@ class Card
 
     public function __toString(): string{
         return $this->getColor(). " ". $this->getSymbol();
+    }
+
+    public function count()
+    {
+        return self::$totalCards;
     }
 }
