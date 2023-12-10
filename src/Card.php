@@ -70,7 +70,7 @@ class Card implements \Countable
             case self::COLOR_CHANGER || self::PICK_FOUR:
                 return 50;
             default:
-                return this->getSymbol();
+                return $this->getSymbol();
         }
     }
 
