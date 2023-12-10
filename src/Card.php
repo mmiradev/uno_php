@@ -78,7 +78,7 @@ class Card implements \Countable
         return $this->getColor(). " ". $this->getSymbol();
     }
 
-    public function count()
+    public function count(): int
     {
         return self::$totalCards;
     }
