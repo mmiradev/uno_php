@@ -53,16 +53,16 @@ class DrawPile extends Pile
 
     //methods and actions
     public function drawCard() {
-        if (empty($this->cards)) {
+        if (empty($this->pile)) {
             throw new Exception("El mazo está vacío");
         }
 
-        return array_shift($this->cards);
+        return array_shift($this->pile);
     }
 
     public function addPileButLast(Pile $p) {
         if (count($p->getPile()) > 1) {
-            $this->cards = array_merge($this->cards, array_slice((array)$p->getPile(), 0, -1));
+            $this->pile = array_merge($this->pile, array_slice((array)$p->getPile(), 0, -1));
         }
     }
 
