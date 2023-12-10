@@ -1,0 +1,7 @@
+TODO:
+
+- implement new user functionality
+
+- implement waiting.php
+
+- implement uno.php
