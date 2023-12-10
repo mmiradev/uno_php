@@ -7,6 +7,13 @@ class PlayerPile extends Pile
         parent::__construct($pile);
     }
 
+
+    //getters
+    public function getPlayerPile(): Card
+    {
+        return $this->pile;
+    }
+
     //methods and actions
     public function getCards() {
         return $this->pile;

@@ -45,6 +45,11 @@ class DrawPile extends Pile
         $this->shuffle();
     }
 
+    //getters
+    public function getDrawPile(): Card
+    {
+        return $this->pile;
+    }
 
     //methods and actions
     public function drawCard() {

@@ -7,6 +7,12 @@ class DiscardPile extends Pile
         parent::__construct($pile);
     }
 
+    //getters
+    public function getDiscardPile(): Card
+    {
+        return $this->pile;
+    }
+
     //methods and actions
     public function peekLastCard() {
         $lastIndex = count($this->pile) - 1;
